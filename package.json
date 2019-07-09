@@ -1,0 +1,23 @@
+{
+  "name": "nextantd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "NODE_ENV=production next start"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "antd": "^3.20.1",
+    "babel-plugin-import": "^1.12.0",
+    "less-loader": "^5.0.0",
+    "next": "^9.0.0",
+    "next-antd-aza-less": "^1.0.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}
