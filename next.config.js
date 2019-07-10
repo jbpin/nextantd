@@ -1,3 +1,4 @@
+const withCSS = require('@zeit/next-css')
 const withLess = require('@zeit/next-less')
 const lessToJS = require('less-vars-to-js')
 const fs = require('fs')
@@ -9,6 +10,11 @@ const themeVariables = lessToJS(
 )
 
 module.exports = withLess({
+  cssModules: true,
+  cssLoaderOptions: {
+    importLoaders: 1,
+    localIdentName: "[local]___[hash:base64:5]",
+  },
   lessLoaderOptions: {
     javascriptEnabled: true,
     modifyVars: themeVariables, // make your antd custom effective
